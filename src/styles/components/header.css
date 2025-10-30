@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 20.25px;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 53px;
+}
+
+.header__nav {
+  max-width: 388px;
+  width: 100%;
+}
+
+.header__button {
+  margin-left: auto;
+}

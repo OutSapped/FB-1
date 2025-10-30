@@ -1,0 +1,23 @@
+.goals {
+  padding-top: 64px;
+  padding-bottom: 58px;
+}
+
+.goals__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 124%;
+  color: var(--base-text-on-dark);
+  max-width: 655px;
+  width: 100%;
+}
+
+.goals__content {
+  padding: 0 85px;
+}
+
+.goals__items {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

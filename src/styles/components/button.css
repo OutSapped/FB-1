@@ -1,0 +1,26 @@
+.button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.02em;
+  color: var(--base-text-on-dark);
+  background: var(--global-primary);
+  border-radius: 1px;
+  padding: 15px 25px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border: none;
+}
+
+.button--small {
+  padding: 5px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.button--no-back {
+  background: none;
+}

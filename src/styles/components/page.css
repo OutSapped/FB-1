@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__header {
+  background: var(--base-text-on-dark);
+  flex-shrink: 0;
+  color: var(--base-text-secondary);
+}
+
+.page__content {
+  flex-grow: 1;
+  background-color: var(--global-dark);
+}
+
+.page__footer {
+  flex-shrink: 0;
+  background-color: var(--global-dark);
+}

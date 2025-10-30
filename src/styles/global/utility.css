@@ -1,0 +1,10 @@
+body {
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --font-family: 'Inter', sans-serif;
+}
