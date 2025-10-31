@@ -1,7 +1,6 @@
 .partners {
   display: flex;
   gap: 30px;
-  height: 50px;
 }
 
 .partners__philips {

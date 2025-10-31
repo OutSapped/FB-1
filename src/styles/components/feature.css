@@ -1,5 +1,4 @@
 .feature {
-  max-width: 255px;
 }
 
 .feature__title {
@@ -18,4 +17,5 @@
   line-height: 162%;
   letter-spacing: -0.02em;
   color: var(--base-text-on-dark);
+  max-width: 255px;
 }
