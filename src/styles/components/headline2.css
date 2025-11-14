@@ -13,7 +13,7 @@
   font-size: 52px;
   line-height: 119%;
   letter-spacing: -0.02em;
-  color: var(--base-text-on-dark);
+  color: var(--color-text-primary);
 }
 
 .headline2__grid {

@@ -1,21 +1,32 @@
 :root {
-  --global-primary: #2e4fd7;
-  --global-secondary: #46ba71;
-  --global-alt: #f46953;
-  --global-dark: #052825;
+  --color-accent-primary: #2e4fd7;
+  --color-accent-secondary: #46ba71;
+  --color-accent-alt: #f46953;
+  --global-dark: #09423d;
   --global-hover-primary: #1a3bc3;
   --global-hover-secondary: #32a65d;
   --global-hover-alt: #e0553f;
-  --base-text-primary: #191919;
-  --base-text-secondary: #1e1e1e;
+  --color-text-primary: #191919;
+  --color-text-secondary: #1e1e1e;
   --base-text-alt: #969696;
-  --base-text-on-dark: #fff;
+  --color-text-on-dark: #fff;
   --base-label-primary: #bebebe;
   --base-boarder: #b4b4b4;
   --base-error-warning: #e55454;
   --base-success: #1ed21a;
-  --base-bg-primary: #fff;
-  --base-bg-secondary: #e7ebfc;
-  --base-bg-dark: #052825;
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #e7ebfc;
+  --color-bg-dark: #12554f;
   --base-bg-inputs: #dcdcdc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #09423d;
+    --color-bg-secondary: #12554f;
+    --color-bg-dark: #19615b;
+    --color-text-primary: #fff;
+    --color-text-secondary: #fff;
+    --color-text-on-dark: #e3e5e5;
+  }
 }

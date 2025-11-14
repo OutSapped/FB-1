@@ -13,12 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
 
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
+    <link rel="stylesheet" href="./src/styles/colors/colors.css" />
+    <link rel="stylesheet" href="./src/styles/components/responsive.css" />
   </head>
   <body>
     <script type="module" src="/src/index.js"></script>
@@ -44,6 +40,11 @@
                 <path d="M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z" fill="white" />
               </svg>
             </button>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
@@ -338,5 +339,54 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <ul class="mobile-menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+        <button class="button button--small mobile-menu-button">
+          <span>Book A Meeting</span>
+          <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z" fill="white" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const body = document.body;
+
+        const overlay = document.createElement('div');
+        overlay.className = 'mobile-overlay';
+        document.body.appendChild(overlay);
+
+        hamburger.addEventListener('click', function () {
+          mobileMenu.classList.toggle('active');
+          overlay.classList.toggle('active');
+          body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        overlay.addEventListener('click', function () {
+          mobileMenu.classList.remove('active');
+          overlay.classList.remove('active');
+          body.style.overflow = '';
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach((link) => {
+          link.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            body.style.overflow = '';
+          });
+        });
+      });
+    </script>
   </body>
 </html>

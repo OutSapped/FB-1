@@ -7,7 +7,7 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 124%;
-  color: var(--base-text-on-dark);
+  color: var(--color-text-primary);
   max-width: 655px;
   width: 100%;
 }

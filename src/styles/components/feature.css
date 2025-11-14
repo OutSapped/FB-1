@@ -6,7 +6,7 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: var(--base-text-on-dark);
+  color: var(--color-text-primary);
   margin-top: 16px;
 }
 
@@ -16,6 +16,6 @@
   font-size: 16px;
   line-height: 162%;
   letter-spacing: -0.02em;
-  color: var(--base-text-on-dark);
+  color: var(--color-text-primary);
   max-width: 255px;
 }

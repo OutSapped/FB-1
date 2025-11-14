@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 162%;
   letter-spacing: -0.02em;
-  color: var(--base-text-on-dark);
+  color: var(--color-text-primary);
   background: var(--global-primary);
   border-radius: 1px;
   padding: 15px 25px;
